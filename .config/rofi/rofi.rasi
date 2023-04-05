@@ -1,0 +1,15 @@
+configuration {
+    
+}
+@import "askpass"
+@import "bluetooth"
+@import "colors"
+@import "confirm"
+@import "font"
+@import "launcher"
+@import "mpd"
+@import "network"
+@import "networkmenu"
+@import "powermenu"
+@import "runner"
+@import "screenshot"
