@@ -1,8 +1,8 @@
 
 width=500
 height=750
-x=20
-y=20
+x=10
+y=10
 location=top_left
 show=drun
 prompt=Search...
