@@ -1,0 +1,175 @@
+/**
+ *
+ * Author : Aditya Shakya (adi1090x)
+ * Github : @adi1090x
+ * 
+ * Rofi Theme File
+ * Rofi Version: 1.7.3
+ **/
+
+/*****----- Configuration -----*****/
+configuration {
+    show-icons:                 false;
+}
+
+/*****----- Global Properties -----*****/
+// @import                          "./shared/colors.rasi"
+@import                          "./shared/fonts.rasi"
+
+/*
+USE_BUTTONS=YES
+*/
+
+/*****----- Main Window -----*****/
+window {
+    /* properties for window widget */
+    // transparency:                "real";
+    location:                    center;
+    anchor:                      center;
+    fullscreen:                  false;
+    width:                       480px;
+    x-offset:                    0px;
+    y-offset:                    0px;
+
+    /* properties for all widgets */
+    enabled:                     true;
+    margin:                      0px;
+    padding:                     0px;
+    border:                      3px solid;
+    border-radius:               10px;
+    border-color:                #f5c2e7;
+    cursor:                      "default";
+    background-color:            #1e1e2e;
+}
+
+/*****----- Main Box -----*****/
+mainbox {
+    enabled:                     true;
+    spacing:                     5px;
+    margin:                      0px;
+    padding:                     10px;
+    border:                      0px solid;
+    border-radius:               10px;
+    border-color:                transparent;
+    background-color:            #1e1e2e;
+    children:                    ["listview"];
+}
+
+/*****----- Inputbar -----*****/
+// inputbar {
+//     enabled:                     true;
+//     spacing:                     15px;
+//     margin:                      0px;
+//     padding:                     0px;
+//     border:                      0px;
+//     border-radius:               10px;
+//     border-color:                @selected;
+//     background-color:            transparent;
+//     text-color:                  @foreground;
+//     children:                    [ "textbox-prompt-colon", "prompt"];
+// }
+
+// dummy {
+//     background-color:            transparent;
+// }
+
+// textbox-prompt-colon {
+//     enabled:                     true;
+//     expand:                      false;
+//     str:                         "";
+//     padding:                     12px 16px;
+//     border-radius:               10px;
+//     background-color:            @urgent;
+//     text-color:                  @background;
+// }
+// prompt {
+//     enabled:                     true;
+//     padding:                     12px;
+//     border-radius:               10px;
+//     background-color:            @active;
+//     text-color:                  @background;
+// }
+
+/*****----- Message -----*****/
+message {
+    enabled:                     true;
+    margin:                      0px;
+    padding:                     12px;
+    border:                      2px solid;
+    border-radius:               10px;
+    border-color:                #cba6f7;
+    background-color:            #313244;
+    text-color:                  #cdd6f4;
+}
+textbox {
+    background-color:            inherit;
+    text-color:                  inherit;
+    vertical-align:              0.5;
+    horizontal-align:            0.5;
+    placeholder-color:           #cdd6f4;
+    blink:                       true;
+    markup:                      true;
+}
+error-message {
+    padding:                     12px;
+    border:                      2px solid;
+    border-radius:               10px;
+    border-color:                #f9e2af;
+    background-color:            #1e1e2e;
+    text-color:                  #cdd6f4;
+}
+
+/*****----- Listview -----*****/
+listview {
+    enabled:                     true;
+    columns:                     5;
+    lines:                       1;
+    cycle:                       true;
+    dynamic:                     true;
+    scrollbar:                   false;
+    layout:                      vertical;
+    reverse:                     false;
+    fixed-height:                true;
+    fixed-columns:               true;
+    
+    spacing:                     10px;
+    margin:                      0px;
+    padding:                     0px;
+    border:                      0px solid;
+    border-radius:               10px;
+    border-color:                #585b70;
+    background-color:            #1e1e2e;
+    text-color:                  #cdd6f4;
+    cursor:                      "default";
+}
+
+/*****----- Elements -----*****/
+element {
+    enabled:                     true;
+    spacing:                     0px;
+    margin:                      0px;
+    padding:                     10px 10px;
+    border:                      0px solid;
+    border-radius:               10px;
+    border-color:                #585b70;
+    background-color:            #313244;
+    text-color:                  #cdd6f4;
+    cursor:                      pointer;
+}
+
+element-text {
+    font:                        "feather bold 32";
+    background-color:            transparent;
+    text-color:                  inherit;
+    cursor:                      inherit;
+    vertical-align:              0.5;
+    horizontal-align:            0.5;
+}
+
+element selected.normal {
+    border:                      2px solid;
+    border-color:                #cba6f7;
+    background-color:            #585b70;
+    text-color:                  #cba6f7;
+}
+
