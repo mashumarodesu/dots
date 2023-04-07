@@ -23,6 +23,6 @@ My Hyprland + Waybar config with Catppuccin theme
 *I have both wofi and rofi (obviously Wayland-compatible version). Wofi for launching apps and rofi for power, bluetooth and wifi menu*
 
 ## Wallpaper
-![wallpaper](dots/Assets/Aqua.png)
+![wallpaper](Assets/Aqua.png)
 
 This wallpaper is an edit I made from the [original pic](https://www.pixiv.net/en/artworks/106654974) using Photoshop.
