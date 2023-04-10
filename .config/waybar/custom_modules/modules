@@ -1,5 +1,5 @@
 {
-  "include": "/home/mashumaro/.config/waybar/custom_modules/privacy_container",
+  "include": "$HOME/.config/waybar/custom_modules/privacy_container",
 
   "custom/launcher": {
     "format": "",
@@ -27,7 +27,7 @@
         "default": "🎜"
     },
     "escape": true,
-    "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
+    "exec": "$HOME/.config/waybar/scripts/mediaplayer.py 2> /dev/null" // Script in resources folder
     // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
   }
 
